@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import { Avatar, Button, Paper, Grid, Typography, Container } from '@material-ui/core'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
-import { GoogleLogin } from 'react-google-login'
+// import { GoogleLogin } from 'react-google-login'
 import { useDispatch } from 'react-redux'
 // eslint-disable-next-line
-import { gapi } from 'gapi-script'
+// import { gapi } from 'gapi-script'
 import { useHistory } from 'react-router-dom'
 
 import useStyles from './styles'
 import Input from './Input'
-import Icon from './icon'
+// import Icon from './icon'
 import { signin, signup } from '../../actions/auth'
 
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPasswor: '' }
@@ -55,10 +55,10 @@ function Auth() {
     //         console.log(error);
     //     }
     // }
-    const googleFailure = (error) => {
-        console.log(error);
-        console.log("Google sign In was not successful. try again");
-    }
+    // const googleFailure = (error) => {
+    //     console.log(error);
+    //     console.log("Google sign In was not successful. try again");
+    // }
     return (
         <Container component="main" maxWidth="xs">
             <Paper className={classes.paper} elevation={3}>
